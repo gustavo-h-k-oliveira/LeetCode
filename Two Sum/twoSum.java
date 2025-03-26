@@ -17,7 +17,7 @@ class Solution {
                 }
             }
         }
-        return new int[]{};
+        throw new IllegalArgumentException("No solution found.");
     }
 
     /*
@@ -39,7 +39,7 @@ class Solution {
                 return new int[] { i, map.get(complement) };
             }
         }
-        return new int[] {};
+        throw new IllegalArgumentException("No solution found.");
     }
 
     /*
@@ -57,7 +57,7 @@ class Solution {
             }
             map.put(nums[i], i);
         }
-        return new int[] {};
+        throw new IllegalArgumentException("No solution found.");
     }
 
     public static void main(String[] args) {
