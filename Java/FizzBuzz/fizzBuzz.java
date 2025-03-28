@@ -1,4 +1,4 @@
-package FizzBuzz;
+package Java.FizzBuzz;
 
 import java.util.ArrayList;
 import java.util.List;
