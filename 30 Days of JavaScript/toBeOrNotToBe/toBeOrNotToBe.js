@@ -54,15 +54,15 @@ var expectWithArrowFunction = val => ({
 
 console.log(expectWithNamedFunctions(5).toBe(5));      // ✅ true
 console.log(expectWithNamedFunctions(5).notToBe(10));  // ✅ true
-console.log(expectWithNamedFunctions(5).notToBe(5));   // ❌ lança "Equal"
-console.log(expectWithNamedFunctions(5).toBe(null));   // ❌ lança "Not Equal"
+console.log(expectWithNamedFunctions(5).notToBe(5));   // ❌ throws "Equal"
+console.log(expectWithNamedFunctions(5).toBe(null));   // ❌ throws "Not Equal"
 
 console.log(expectTraditional(5).toBe(5));      // ✅ true
 console.log(expectTraditional(5).notToBe(10));  // ✅ true
-console.log(expectTraditional(5).notToBe(5));   // ❌ lança "Equal"
-console.log(expectTraditional(5).toBe(null));   // ❌ lança "Not Equal"
+console.log(expectTraditional(5).notToBe(5));   // ❌ throws "Equal"
+console.log(expectTraditional(5).toBe(null));   // ❌ throws "Not Equal"
 
 console.log(expectWithArrowFunction(5).toBe(5));      // ✅ true
 console.log(expectWithArrowFunction(5).notToBe(10));  // ✅ true
-console.log(expectWithArrowFunction(5).notToBe(5));   // ❌ lança "Equal"
-console.log(expectWithArrowFunction(5).toBe(null));   // ❌ lança "Not Equal"
+console.log(expectWithArrowFunction(5).notToBe(5));   // ❌ throws "Equal"
+console.log(expectWithArrowFunction(5).toBe(null));   // ❌ throws "Not Equal"
