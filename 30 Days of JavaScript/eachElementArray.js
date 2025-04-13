@@ -4,6 +4,7 @@
  * @return {number[]}
  */
 // Time and space complexity: O(n) -> n array elements.
+// 40 ms
 var mapForEach = function(arr, fn) {
     let returnedArray = [];
 
@@ -14,6 +15,7 @@ var mapForEach = function(arr, fn) {
     return returnedArray;
 };
 
+// 16 ms
 var mapFor = function(arr, fn) {
     const newArr = [];
     for(let i = 0; i < arr.length; i++) {
